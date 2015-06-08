@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "bower": "^1.4.1",
+    "express": "^4.12.4",
+    "jade": "^1.10.0"
+  }
+}

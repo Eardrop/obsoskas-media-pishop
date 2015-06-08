@@ -1,0 +1,21 @@
+mixin css(src)
+    link(rel="stylesheet", href=src)
+
+mixin js(src)
+    script(src=src)
+
+doctype html5 
+html
+    head
+        title #{title}
+        meta(name="viewport", content="width=device-width,maximum-scale=1,initial-scale=1,user-scalable=0")
+        link(rel="shortcut icon", href="/st/favicon.png")
+
+        //- styles
+        +css("//fonts.googleapis.com/css?family=Oleo+Script:400,700")
+        +css("/styles.css")
+        +js("/libs/jquery/dist/jquery.js")
+        +js("/libs/angular/angular.js")
+    
+    body
+        block content
